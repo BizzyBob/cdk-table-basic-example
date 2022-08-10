@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 export class UiTableComponent {
   @Input() dataSource: DataSource<any>;
   @Input() displayedColumns: string[];
+  @Input() columnDefs: Array<{name: string, key: string}>;
 }

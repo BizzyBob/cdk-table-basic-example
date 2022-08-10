@@ -10,6 +10,12 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class AppComponent  { 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new ExampleDataSource();
+  columnDefs = [
+    { name: 'No.', key: 'position' },
+    { name: 'Name', key: 'name' },
+    { name: 'Weight', key: 'weight' },
+    { name: 'Symbol', key: 'symbol' },
+  ];
 }
 
 export class ExampleDataSource extends DataSource<PeriodicElement> {
